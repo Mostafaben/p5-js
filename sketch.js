@@ -3,7 +3,7 @@ let starterBalls = 1;
 let balls = [];
 let respawnCounter = 0;
 let score = 0;
-let ballsCount = 10;
+let ballsCount = 30;
 let btnCoor;
 let start = false;
 let canvas;
