@@ -2,7 +2,7 @@ const len = 120;
 let angle;
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  angle = PI / 5;
+  angle = PI / 6;
   noLoop();
 }
 function draw() {
@@ -14,7 +14,7 @@ function draw() {
 }
 
 function branch(len, c) {
-  if (len <= 5) return;
+  if (len <= 4) return;
   stroke(c);
   line(0, 0, 0, -len);
 
@@ -23,8 +23,8 @@ function branch(len, c) {
   translate(0, -len);
   push();
   rotate(angle);
-  branch(len * 0.75, newColor);
+  branch(len * 0.8, newColor);
   pop();
   rotate(-angle);
-  branch(len * 0.75, newColor);
+  branch(len * 0.8, newColor);
 }
